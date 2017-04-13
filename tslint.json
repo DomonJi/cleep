@@ -20,7 +20,6 @@
         "no-angle-bracket-type-assertion": true,
         "no-consecutive-blank-lines": true,
         "quotemark": [true, "single"],
-        "space-before-function-paren": [true, "never"],
         "whitespace": [true, "check-decl", "check-operator", "check-module", "check-type"]
     }
 }

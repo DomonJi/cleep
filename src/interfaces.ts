@@ -5,6 +5,7 @@ import {HTTPSource, RequestOptions} from '@cycle/http'
 export interface Sources {
   DOM: DOMSource,
   HTTP: HTTPSource
+  prop?: Rx.Observable<any>
 }
 
 export interface Sinks {
@@ -13,7 +14,22 @@ export interface Sinks {
 }
 
 export interface State {
-  count: number
+  count: number,
+  search: boolean,
+  list: Array<Item>,
+  layout: boolean
+}
+
+export interface Item {
+  type: ItemType
+}
+
+export enum ItemType {
+  text,
+  voice,
+  drawing,
+  todolist,
+  reminder
 }
 
 export interface Action {
