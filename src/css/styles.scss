@@ -1,42 +1,80 @@
-html {
-    width: 100%;
-    height: 100%;
+html #app{
+  width: 100%;
+  height: 100%;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#app{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  background-color: #dfdfdf;
+  z-index:-1;
 }
 
 .header {
-    width: 100%;
-    height: 2.5rem;
-    display: flex;
-    padding: 0.6rem;
-    background: #ffcA16;
-    color: white;
-    box-shadow: 0 1px 3px gray
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  padding: 0.6rem 0;
+  background: #ffcA16;
+  color: white;
+  box-shadow: 0 1px 6px gray;
 }
 
 .header-icon {
-    height: 100%;
-    width: 2rem;
-    margin: 0 0.2rem;
-    line-height: 2.5rem;
-    text-align: center;
-    vertical-align: middle;
+  height: 100%;
+  width: 2rem;
+  margin: 0 0.6rem;
+  line-height: 2.5rem;
+  text-align: center;
+  vertical-align: middle;
 }
 
 span.header-main {
-    flex: 1;
-    height: 100%;
-    font-size: 1.1rem;
-    line-height: 2.5rem;
-    margin: 0 0.5rem;
+  flex: 1;
+  height: 100%;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+  margin: 0 0.5rem;
 }
 
 input.header-main {
+  flex: 1;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+
+.footer {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  padding: 0.6rem 0;
+  background: white;
+  color: gray;
+  box-shadow: 0 -1px 6px gray;
+  span {
     flex: 1;
-    margin: 0 0.5rem;
+    height: 100%;
     font-size: 1rem;
+    line-height: 2rem;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+  }
+  i {
+    height: 100%;
+    width: 1.8rem;
+    margin: 0 0.5rem;
+    line-height: 2Rem;
+    text-align: center;
+    vertical-align: middle;
+  }
 }

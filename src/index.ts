@@ -9,7 +9,7 @@ import {App} from './app'
 
 const main : Component = App
 const drivers: any = {
-  DOM: makeDOMDriver('#app'),
+  DOM: makeDOMDriver('body'),
   HTTP: makeHTTPDriver()
 }
 
